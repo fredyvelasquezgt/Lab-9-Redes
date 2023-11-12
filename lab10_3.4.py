@@ -55,7 +55,7 @@ def convert_to_binary(temperature, humidity, wind_direction):
     return temperature + humidity + wind_direction
 
 
-producer = KafkaProducer(bootstrap_servers='lab9.alumchat.fun')
+producer = KafkaProducer(bootstrap_servers='lab9.alumchat.xyz')
 
 for i in range(3):
     data = get_random_values()
