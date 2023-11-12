@@ -1,3 +1,6 @@
+# Javier Valle
+# Angel Higueros
+# Fredy Velasquez
 
 from kafka import KafkaProducer
 import random
@@ -22,7 +25,7 @@ def get_random_values():
     return {"temperature": generate_random_float_number_gaussian(), "humidity": generate_random_number_gaussian(), "wind_direction": get_random_cardinal_point()}
 
 
-producer = KafkaProducer(bootstrap_servers='lab10.alumchat.fun')
+producer = KafkaProducer(bootstrap_servers='lab9.alumchat.xyz')
 
 for i in range(10):
     x = get_random_values()
